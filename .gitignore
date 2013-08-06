@@ -1,0 +1,10 @@
+.DS_Store
+LICENSE.txt
+administrator/
+bin/
+cache/
+cli/
+configuration.php
+logs/
+tmp/
+web.config.txt
