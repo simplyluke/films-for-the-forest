@@ -13,11 +13,11 @@
 @topshadow:				#ffffff;
 
 // Showcase --------------------
-@showcasebackground:	#d7d7d7;
+@showcasebackground:	#D4D4D4;
 @showcasebackground2:	#eeeeee;
 @showcasebackground3:	#f5f5f5;
-@showcasetext:			#6e6e6e;
-@showcasetitle:			#303030;
+@showcasetext:			#000000;
+@showcasetitle:			#000000;
 
 // Logo
 .logo-type-gantry #rt-logo {
@@ -48,16 +48,22 @@
 
 // Showcase
 #rt-showcase {
-	#gradient > .vertical(@showcasebackground, @showcasebackground2);
+	//#gradient > .vertical(@showcasebackground, @showcasebackground2);
+	background-color: @showcasebackground;
 	color: @showcasetext;
+	h1, h2, h3, h4, h5, h6{
+		color: @showcasetitle;
+	}
 	border-bottom: 1px solid @topshadow;
 	.box-shadow(inset 0 -1px 0 rgba(0,0,0,0.15));
-	text-shadow: 0 2px 3px @topshadow;
+	/*text-shadow: 0 2px 3px @topshadow;
 		.title {
 			color: @showcasetitle;
 			text-shadow: 1px 1px 1px @topshadow;
 		}
+	*/
 }
+
 #rt-showcase {
 	a {
 		&:hover {
